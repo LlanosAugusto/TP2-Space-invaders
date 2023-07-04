@@ -6415,21 +6415,6 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "height": 206,
-          "layer": "",
-          "name": "Title",
-          "persistentUuid": "3fb3856a-0e32-43f2-bc6e-b90193d16624",
-          "width": 831,
-          "x": 178,
-          "y": 49,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -6487,6 +6472,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Titulo",
+          "persistentUuid": "72ebf898-5b45-441d-9665-09830d5ff45b",
+          "width": 0,
+          "x": 139,
+          "y": 102,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6533,9 +6533,9 @@
         },
         {
           "assetStoreId": "",
-          "bold": true,
+          "bold": false,
           "italic": false,
-          "name": "Title",
+          "name": "Titulo",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -6543,14 +6543,14 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "INVADERS",
+          "string": "SPACE INVADERS",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "",
-          "characterSize": 140,
+          "characterSize": 48,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 178
+            "b": 27,
+            "g": 2,
+            "r": 208
           }
         },
         {
