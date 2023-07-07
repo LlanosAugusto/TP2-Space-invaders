@@ -3871,7 +3871,28 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": true,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": false,
+              "deceleration": 1500,
+              "gravity": 0,
+              "ignoreDefaultControls": false,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 0,
+              "maxFallingSpeed": 0,
+              "maxSpeed": 100,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 0,
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
               "name": "Ship",
@@ -5529,78 +5550,6 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "KeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "Left"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "Ship",
-                            ">",
-                            "50"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "MettreX"
-                          },
-                          "parameters": [
-                            "Ship",
-                            "-",
-                            "120 * TimeDelta()"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "KeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "Right"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "Ship",
-                            "<",
-                            "1000"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "MettreX"
-                          },
-                          "parameters": [
-                            "Ship",
-                            "+",
-                            "120 * TimeDelta()"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
                             "value": "BuiltinCommonInstructions::Or"
                           },
                           "parameters": [],
@@ -6360,25 +6309,6 @@
             },
             {
               "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Ship",
-                ">",
-                "50"
-              ]
-            },
-            {
-              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -6387,12 +6317,22 @@
           "actions": [
             {
               "type": {
-                "value": "MettreX"
+                "value": "PlatformBehavior::MaxSpeed"
               },
               "parameters": [
                 "Ship",
-                "-",
-                "5000 * TimeDelta()"
+                "PlatformerObject",
+                "=",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Ship",
+                "\"Dash\""
               ]
             }
           ]
@@ -6402,48 +6342,26 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "z"
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Right"
-              ]
-            },
-            {
-              "type": {
-                "value": "PosX"
+                "value": "CompareObjectTimer"
               },
               "parameters": [
                 "Ship",
-                "<",
-                "1000"
+                "\"Dash\"",
+                ">",
+                "0.5"
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "MettreX"
+                "value": "PlatformBehavior::MaxSpeed"
               },
               "parameters": [
                 "Ship",
-                "+",
-                "5000* TimeDelta()"
+                "PlatformerObject",
+                "=",
+                "100"
               ]
             }
           ]
