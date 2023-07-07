@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Title",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -240,6 +240,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Backgraund.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Backgraund.jpg",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -3883,6 +3892,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -3895,9 +3906,7 @@
               "ladderClimbingSpeed": 0,
               "maxFallingSpeed": 0,
               "maxSpeed": 100,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 0,
               "yGrabOffset": 0
@@ -3974,7 +3983,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Background1.jpeg",
+                      "image": "Backgraund.jpg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6475,8 +6484,8 @@
           "name": "Instruction2",
           "persistentUuid": "92d0dcd8-f06f-48b4-960e-5a58268b943e",
           "width": 0,
-          "x": 139,
-          "y": 351,
+          "x": 149,
+          "y": 383,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -6500,28 +6509,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 87,
-          "layer": "",
-          "name": "NewObject3",
-          "persistentUuid": "e20e623a-48b6-46a8-8b52-5f246c9e278a",
-          "width": 308,
-          "x": 518,
-          "y": 462,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "depth": 0,
+          "height": 185,
           "layer": "",
           "name": "Instruction1",
           "persistentUuid": "f1cec5a3-8822-4f66-8412-c1e40e987392",
-          "width": 0,
-          "x": 133,
-          "y": 242,
+          "width": 294,
+          "x": 127,
+          "y": 181,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -6535,8 +6530,8 @@
           "name": "Titulo",
           "persistentUuid": "72ebf898-5b45-441d-9665-09830d5ff45b",
           "width": 0,
-          "x": 139,
-          "y": 102,
+          "x": 203,
+          "y": 64,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -6564,7 +6559,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Background1.jpeg",
+                      "image": "Backgraund.jpg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6599,8 +6594,8 @@
           "behaviors": [],
           "string": "SPACE INVADERS",
           "font": "Kenney Future Narrow.ttf",
-          "textAlignment": "",
-          "characterSize": 48,
+          "textAlignment": "center",
+          "characterSize": 68,
           "color": {
             "b": 27,
             "g": 2,
@@ -6619,7 +6614,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Desktop - Left, Right to move base, Ctrl or Space to Fire. \n\nMobile - Use touch controls",
+          "string": "Controls\n\nMove: Left and Right.\n\nShoot: Space.\n\nDash: z. \n\n",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "",
           "characterSize": 24,
