@@ -6335,9 +6335,118 @@
           "parameters": []
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Dash"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "z"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Ship",
+                ">",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Ship",
+                "-",
+                "5000 * TimeDelta()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "z"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ]
+            },
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Ship",
+                "<",
+                "1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Ship",
+                "+",
+                "5000* TimeDelta()"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -6385,7 +6494,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        }
+      ]
     },
     {
       "b": 209,
