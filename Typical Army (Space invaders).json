@@ -231,6 +231,16 @@
         "name": "GFX\\Fire.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "sci_fi_door-6451.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sci_fi_door-6451.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6333,6 +6343,18 @@
               "parameters": [
                 "Ship",
                 "\"Dash\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sci_fi_door-6451.mp3",
+                "",
+                "30",
+                "1"
               ]
             }
           ]
