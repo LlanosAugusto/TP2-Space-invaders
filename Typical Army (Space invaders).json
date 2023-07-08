@@ -5876,7 +5876,29 @@
                     "Invader1",
                     "Loot",
                     "=",
-                    "RandomInRange(1,2)"
+                    "RandomInRange(1,10)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Invader2",
+                    "Loot",
+                    "=",
+                    "RandomInRange(1,10)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Invader3",
+                    "Loot",
+                    "=",
+                    "RandomInRange(1,10)"
                   ]
                 }
               ],
@@ -5936,6 +5958,126 @@
                         "Escudo",
                         "Invader1.PointX(\"\")",
                         "Invader1.PointY(\"\")",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Invader2",
+                        "Loot",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "DisparoDoble",
+                        "Invader2.PointX(\"\")",
+                        "Invader2.PointY(\"\")",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Invader2",
+                        "Loot",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Escudo",
+                        "Invader2.PointX(\"\")",
+                        "Invader2.PointY(\"\")",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Invader3",
+                        "Loot",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "DisparoDoble",
+                        "Invader3.PointX(\"\")",
+                        "Invader3.PointY(\"\")",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Invader3",
+                        "Loot",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Escudo",
+                        "Invader3.PointX(\"\")",
+                        "Invader3.PointY(\"\")",
                         ""
                       ]
                     }
