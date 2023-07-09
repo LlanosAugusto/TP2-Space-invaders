@@ -20559,8 +20559,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Title",
-      "name": "Title",
+      "mangledName": "Controls",
+      "name": "Controls",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -20590,8 +20590,8 @@
           "name": "Instruction2",
           "persistentUuid": "92d0dcd8-f06f-48b4-960e-5a58268b943e",
           "width": 0,
-          "x": 149,
-          "y": 383,
+          "x": 131,
+          "y": 384,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -20620,9 +20620,9 @@
           "layer": "",
           "name": "Instruction1",
           "persistentUuid": "f1cec5a3-8822-4f66-8412-c1e40e987392",
-          "width": 294,
-          "x": 127,
-          "y": 181,
+          "width": 298,
+          "x": 381,
+          "y": 153,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -20636,7 +20636,7 @@
           "name": "Titulo",
           "persistentUuid": "72ebf898-5b45-441d-9665-09830d5ff45b",
           "width": 0,
-          "x": 203,
+          "x": 333,
           "y": 64,
           "zOrder": 5,
           "numberProperties": [],
@@ -20698,7 +20698,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "SPACE INVADERS",
+          "string": "Controls",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "center",
           "characterSize": 68,
@@ -20720,7 +20720,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Controls\n\nMove: Left and Right.\n\nShoot: Space.\n\nDash: z. \n\n",
+          "string": "\nMove: Left and Right.\n\nShoot: Space.\n\nDash: z. \n\n",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "",
           "characterSize": 24,
@@ -20922,6 +20922,421 @@
                   "parameters": [
                     "",
                     "\"Phase1\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Title",
+      "name": "Title",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.784,
+        "windowMask": true
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Instruction2",
+          "persistentUuid": "92d0dcd8-f06f-48b4-960e-5a58268b943e",
+          "width": 0,
+          "x": 131,
+          "y": 383,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 557,
+          "layer": "",
+          "name": "Background",
+          "persistentUuid": "dd963134-fe60-4faf-bab9-ee1c74c63467",
+          "width": 1077,
+          "x": -15,
+          "y": -14,
+          "zOrder": -3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Titulo",
+          "persistentUuid": "72ebf898-5b45-441d-9665-09830d5ff45b",
+          "width": 0,
+          "x": 203,
+          "y": 64,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 185,
+          "layer": "",
+          "name": "Instruction1",
+          "persistentUuid": "b47f5b31-8dbc-4621-98ec-26f9ee4656b7",
+          "width": 737,
+          "x": 149,
+          "y": 149,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "Background",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Backgraund.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Titulo",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "SPACE INVADERS",
+          "font": "Kenney Future Narrow.ttf",
+          "textAlignment": "center",
+          "characterSize": 68,
+          "color": {
+            "b": 27,
+            "g": 2,
+            "r": 208
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Instruction1",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Sepia",
+              "name": "Effect",
+              "doubleParameters": {
+                "opacity": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "string": "Creado por Juan Manuel Del Valle y Augusto Valentin Llanos\n",
+          "font": "Kenney Future Narrow.ttf",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 133,
+            "g": 251,
+            "r": 250
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Instruction2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Touch or press any key to start.",
+          "font": "Kenney Future Narrow.ttf",
+          "textAlignment": "",
+          "characterSize": 40,
+          "color": {
+            "b": 76,
+            "g": 218,
+            "r": 145
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewObject3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "GDevelop.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 277,
+                        "y": 112
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Score",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "frontier-17296.mp3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"TitleDELAY\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Wait before allowing to start a new game"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"TitleDELAY\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "SourisBouton"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnyKeyPressed"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Controls\"",
                     "yes"
                   ]
                 }
