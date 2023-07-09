@@ -4436,7 +4436,7 @@
               "folded": true,
               "name": "Health",
               "type": "number",
-              "value": 25
+              "value": 30
             }
           ],
           "effects": [],
@@ -4672,7 +4672,7 @@
                       "parameters": [
                         "boss",
                         "<",
-                        "2"
+                        "3"
                       ]
                     }
                   ],
