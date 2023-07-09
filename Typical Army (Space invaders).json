@@ -406,6 +406,60 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Arrow Key_Left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Arrow Key_Left.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Arrow Key_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Arrow Key_Right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Space Key.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Space Key.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Letter Key_Z.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Letter Key_Z.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Gold things.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gold things.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Gold shield.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gold shield.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -423,6 +477,12 @@
       "name": "Spawner",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "DisparoDoble",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -10541,7 +10601,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites\\Doble tiro.png",
+                      "image": "assets\\Gold things.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -10582,7 +10642,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites\\Escudo con Cruz.png",
+                      "image": "assets\\Gold shield.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11792,15 +11852,6 @@
                               "parameters": [
                                 "",
                                 "Space"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "KeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "LControl"
                               ]
                             }
                           ]
@@ -17220,7 +17271,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites\\Doble tiro.png",
+                      "image": "assets\\Gold things.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -17261,7 +17312,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites\\Escudo con Cruz.png",
+                      "image": "assets\\Gold shield.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -17578,6 +17629,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Invaders",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19790,13 +19842,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 557,
+          "depth": 0,
+          "height": 766,
           "layer": "",
           "name": "Background",
           "persistentUuid": "dd963134-fe60-4faf-bab9-ee1c74c63467",
           "width": 1077,
-          "x": -15,
-          "y": -14,
+          "x": -30,
+          "y": -17,
           "zOrder": -3,
           "numberProperties": [],
           "stringProperties": [],
@@ -19811,8 +19864,8 @@
           "name": "Instruction1",
           "persistentUuid": "f1cec5a3-8822-4f66-8412-c1e40e987392",
           "width": 480,
-          "x": 257,
-          "y": 147,
+          "x": 268,
+          "y": 256,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -19888,10 +19941,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "SPACE INVADERS",
+          "string": "You lose",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "center",
-          "characterSize": 68,
+          "characterSize": 120,
           "color": {
             "b": 27,
             "g": 2,
@@ -19910,14 +19963,14 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "You got hit by the enemy and your ship got destroyed.                                            \nYou lose",
+          "string": "You got hit by the enemy and your ship got destroyed.                                            \n",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "center",
           "characterSize": 25,
           "color": {
-            "b": 20,
-            "g": 85,
-            "r": 175
+            "b": 28,
+            "g": 231,
+            "r": 248
           }
         },
         {
@@ -20195,13 +20248,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 557,
+          "depth": 0,
+          "height": 738,
           "layer": "",
           "name": "Background",
           "persistentUuid": "dd963134-fe60-4faf-bab9-ee1c74c63467",
           "width": 1077,
-          "x": -15,
-          "y": -14,
+          "x": -28,
+          "y": -13,
           "zOrder": -3,
           "numberProperties": [],
           "stringProperties": [],
@@ -20216,8 +20270,8 @@
           "name": "Instruction1",
           "persistentUuid": "f1cec5a3-8822-4f66-8412-c1e40e987392",
           "width": 480,
-          "x": 257,
-          "y": 147,
+          "x": 261,
+          "y": 257,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -20231,8 +20285,8 @@
           "name": "Titulo",
           "persistentUuid": "72ebf898-5b45-441d-9665-09830d5ff45b",
           "width": 0,
-          "x": 203,
-          "y": 64,
+          "x": 246,
+          "y": 68,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -20293,10 +20347,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "SPACE INVADERS",
+          "string": "You win",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "center",
-          "characterSize": 68,
+          "characterSize": 120,
           "color": {
             "b": 27,
             "g": 2,
@@ -20315,7 +20369,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "You finished off the invasion of spacial ships and destroyed their commanders, in the process you saved earth too, we salute you pilot.                                You Win !",
+          "string": "You finished off the invasion of spacial ships and destroyed their commanders, you saved earth, we salute you pilot.                               ",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "center",
           "characterSize": 25,
@@ -20605,7 +20659,7 @@
           "name": "Background",
           "persistentUuid": "dd963134-fe60-4faf-bab9-ee1c74c63467",
           "width": 1077,
-          "x": -15,
+          "x": -35,
           "y": -14,
           "zOrder": -3,
           "numberProperties": [],
@@ -20621,8 +20675,8 @@
           "name": "Instruction1",
           "persistentUuid": "f1cec5a3-8822-4f66-8412-c1e40e987392",
           "width": 298,
-          "x": 381,
-          "y": 153,
+          "x": 330,
+          "y": 154,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -20639,6 +20693,70 @@
           "x": 333,
           "y": 64,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 49,
+          "layer": "",
+          "name": "FlechaIZ",
+          "persistentUuid": "1916c9e8-e513-446e-a3fd-dbefee623ad3",
+          "width": 46,
+          "x": 417,
+          "y": 163,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "layer": "",
+          "name": "FlashDE",
+          "persistentUuid": "5d6c7cbb-16b1-4cd3-9d3c-b3ff14fd30d2",
+          "width": 44,
+          "x": 460,
+          "y": 163,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 66,
+          "layer": "",
+          "name": "SpaceBar",
+          "persistentUuid": "50e9b415-9eb6-4df4-afab-7a352fca68ff",
+          "width": 68,
+          "x": 423,
+          "y": 204,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 54,
+          "layer": "",
+          "name": "TeclaZ",
+          "persistentUuid": "8639baab-0ada-4ae4-a064-2ea4067ba776",
+          "width": 50,
+          "x": 400,
+          "y": 259,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20703,9 +20821,9 @@
           "textAlignment": "center",
           "characterSize": 68,
           "color": {
-            "b": 27,
-            "g": 2,
-            "r": 208
+            "b": 226,
+            "g": 144,
+            "r": 74
           }
         },
         {
@@ -20720,7 +20838,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "\nMove: Left and Right.\n\nShoot: Space.\n\nDash: z. \n\n",
+          "string": "\nMove: \n\nShoot: \n\nDash: \n\n",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "",
           "characterSize": 24,
@@ -20778,6 +20896,181 @@
                         "name": "origine",
                         "x": 277,
                         "y": 112
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "FlechaIZ",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Arrow Key_Left.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "FlashDE",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Arrow Key_Right.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "SpaceBar",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Space Key.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "TeclaZ",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Letter Key_Z.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
