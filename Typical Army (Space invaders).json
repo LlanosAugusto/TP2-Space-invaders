@@ -13245,7 +13245,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Phase2\"",
+                    "\"Phase3\"",
                     ""
                   ]
                 }
@@ -22346,8 +22346,8 @@
           "name": "Instruction1",
           "persistentUuid": "b47f5b31-8dbc-4621-98ec-26f9ee4656b7",
           "width": 737,
-          "x": 149,
-          "y": 149,
+          "x": 143,
+          "y": 218,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -22440,9 +22440,9 @@
             }
           ],
           "behaviors": [],
-          "string": "Creado por Juan Manuel Del Valle y Augusto Valentin Llanos\n",
+          "string": "Creado por Juan Manuel Del Valle y Augusto Llanos\n",
           "font": "Kenney Future Narrow.ttf",
-          "textAlignment": "",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 133,
