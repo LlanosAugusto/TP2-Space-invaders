@@ -20035,6 +20035,15 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"TitleDELAY\""
+              ]
             }
           ]
         },
@@ -20052,7 +20061,18 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"TitleDELAY\""
+              ]
+            }
+          ],
           "actions": [],
           "events": [
             {
@@ -20420,6 +20440,15 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"TitleDELAY\""
+              ]
             }
           ]
         },
@@ -20437,7 +20466,18 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"TitleDELAY\""
+              ]
+            }
+          ],
           "actions": [],
           "events": [
             {
@@ -20805,6 +20845,15 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"TitleDELAY\""
+              ]
             }
           ]
         },
@@ -20822,7 +20871,18 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "2",
+                "\"TitleDELAY\""
+              ]
+            }
+          ],
           "actions": [],
           "events": [
             {
