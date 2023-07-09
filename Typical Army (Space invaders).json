@@ -10131,9 +10131,9 @@
             {
               "name": "Health",
               "type": "Health::Health",
-              "Health": 2,
+              "Health": 1,
               "CurrentHealth": 0,
-              "MaxHealth": 4,
+              "MaxHealth": 2,
               "DamageCooldown": 0,
               "IsHealthJustDamaged": false,
               "HealthRegenRate": 0,
@@ -17289,9 +17289,9 @@
             {
               "name": "Health",
               "type": "Health::Health",
-              "Health": 2,
+              "Health": 1,
               "CurrentHealth": 0,
-              "MaxHealth": 4,
+              "MaxHealth": 2,
               "DamageCooldown": 0,
               "IsHealthJustDamaged": false,
               "HealthRegenRate": 0,
