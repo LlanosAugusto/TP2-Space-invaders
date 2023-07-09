@@ -277,6 +277,15 @@
         "name": "Sprites\\Escudo con Cruz.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Boss.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\Boss.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -7383,7 +7392,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6823712046946897,
+        "zoomFactor": 0.9507170174253862,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7401,6 +7410,22 @@
           "x": -67,
           "y": -48,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 137,
+          "layer": "",
+          "name": "aa",
+          "persistentUuid": "3f64d6b8-bbd2-40b2-bd15-fc6f3aff6dbb",
+          "width": 203,
+          "x": 351,
+          "y": 227,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7428,6 +7453,47 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "Backgraund.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "aa",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sprites\\Boss.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
