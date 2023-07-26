@@ -514,6 +514,68 @@
         "name": "assets\\Hit2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "platform 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "platform 2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1178b0073bf2e7b5ae2b4088461206d78c1893e7bfd8bbd7d428d45c8218ef39_Back.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Xelu Free Controller and Key Prompts/Console Inputs/Xbox 360/1178b0073bf2e7b5ae2b4088461206d78c1893e7bfd8bbd7d428d45c8218ef39_Back.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image3",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -12956,7 +13018,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1,
+        "zoomFactor": 1.0685777208211997,
         "windowMask": false
       },
       "objectsGroups": [
@@ -13051,8 +13113,8 @@
           "name": "Ship",
           "persistentUuid": "c857b361-2dd0-4ac6-afd8-2aad6e912bc4",
           "width": 0,
-          "x": 497,
-          "y": 459,
+          "x": 500,
+          "y": 460,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -16373,6 +16435,550 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "59ce06ee-a701-49bf-a349-0999bda2782f",
+          "width": 20,
+          "x": 40,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "7eb608cd-38d1-4343-bf8c-5f3e759e00b5",
+          "width": 20,
+          "x": 60,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "10f38f97-2ce0-4f48-95aa-3969b1b56f6f",
+          "width": 20,
+          "x": 80,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "4c1eb361-b274-494e-87e3-f52180c21755",
+          "width": 20,
+          "x": 100,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "ca43bada-a29b-411d-a9af-126ca5bfe47e",
+          "width": 20,
+          "x": 120,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "d0382d66-1480-4ead-a0a5-3e7a7a0001a7",
+          "width": 20,
+          "x": 140,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "f7203817-8bd8-4fcd-8da4-5390426a3c1e",
+          "width": 20,
+          "x": 160,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "1dd90d07-b585-4de7-93ae-c4d498097cb2",
+          "width": 20,
+          "x": 180,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "208e3aab-acf5-465b-a5af-d7af26954e41",
+          "width": 20,
+          "x": 200,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "b6371e41-bafe-488e-ba42-d42e4beb9a96",
+          "width": 20,
+          "x": 220,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "d9d98e7c-3e25-4a2b-b40b-f09679dea1c4",
+          "width": 20,
+          "x": 320,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "6dcf4e73-ff8e-4b07-a4fe-ae1a914d0bd9",
+          "width": 20,
+          "x": 340,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "d33f88bf-1f83-4741-9a59-a2002080a4c5",
+          "width": 20,
+          "x": 360,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "f976a6cb-1633-485f-bad2-6840d40b9034",
+          "width": 20,
+          "x": 380,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "d116065b-d50a-455e-901e-dec07d5bc0c4",
+          "width": 20,
+          "x": 400,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "cf6bfb90-0000-4ab4-929e-81f8de3bdb46",
+          "width": 20,
+          "x": 460,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "d7bfd994-ebad-4389-af93-6b5aa52bd923",
+          "width": 20,
+          "x": 480,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "117574fb-8c28-49d5-98af-39cb25366d4a",
+          "width": 20,
+          "x": 500,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "af9c06f7-bd97-4e0b-94aa-0611b75bd94e",
+          "width": 20,
+          "x": 520,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "9ac7ea32-d811-4cc7-a21b-687b50563f5f",
+          "width": 20,
+          "x": 580,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "d2384c4f-411c-4127-afee-e1a38f8a3b73",
+          "width": 20,
+          "x": 600,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "a5e193c6-e114-4bd6-9e65-c6bd18aac0b9",
+          "width": 20,
+          "x": 620,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "cee97831-5e87-47d1-932e-a5fa25b61437",
+          "width": 20,
+          "x": 640,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "ab6a6ad8-bff7-42ce-81f9-803d5cfe5ed3",
+          "width": 20,
+          "x": 740,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "6f1bcc59-609c-4db1-a5fd-1299b44415d5",
+          "width": 20,
+          "x": 760,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "0af8cced-fb40-465c-bb4a-f8baa3bc5143",
+          "width": 20,
+          "x": 780,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "f72c8a72-83aa-47e5-baf0-e7f346b8c797",
+          "width": 20,
+          "x": 800,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "b6eb8e1c-0405-4fa7-a461-6b8663d57cc2",
+          "width": 20,
+          "x": 820,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "e00bfea8-0f3a-4b55-938f-e86fe9b0c737",
+          "width": 20,
+          "x": 840,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "d3b71f92-cd59-44d8-8ef0-ed1d895e4c5e",
+          "width": 20,
+          "x": 860,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "cc0acc61-2b0b-4132-90da-984921ba9040",
+          "width": 20,
+          "x": 880,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "47fbb8f1-ca80-4c71-920d-81bfde09f40d",
+          "width": 20,
+          "x": 900,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "855f0b38-375f-4a87-961e-3e9e00e46303",
+          "width": 20,
+          "x": 920,
+          "y": 469,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "Muerte",
+          "persistentUuid": "913560ac-7390-4849-adda-59fde9a8c1ff",
+          "width": 984,
+          "x": -14,
+          "y": 542,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -16544,6 +17150,9 @@
               "HealToBeApplied": 0
             },
             {
+              "gravity": 1000,
+              "jumpSpeed": 400,
+              "maxFallingSpeed": 700,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
@@ -16551,12 +17160,9 @@
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
               "deceleration": 1500,
-              "gravity": 0,
               "ignoreDefaultControls": false,
-              "jumpSpeed": 600,
               "jumpSustainTime": 0.2,
               "ladderClimbingSpeed": 0,
-              "maxFallingSpeed": 0,
               "maxSpeed": 100,
               "slopeMaxAngle": 60,
               "useLegacyTrajectory": false,
@@ -17130,6 +17736,38 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Graund",
+          "tags": "",
+          "texture": "New image",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Muerte",
+          "tags": "",
+          "texture": "New image3",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -18104,6 +18742,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player Input Move",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18143,7 +18782,7 @@
                           },
                           "parameters": [
                             "",
-                            "Space"
+                            "x"
                           ]
                         },
                         {
@@ -18724,6 +19363,65 @@
                   },
                   "parameters": [
                     "Base",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "BombNUM",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "laser1.ogg",
+                    "no",
+                    "30",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "Graund",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Graund",
                     ""
                   ]
                 },
@@ -19635,6 +20333,38 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "Muerte",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "Health",
+                    "100",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
@@ -19725,6 +20455,10 @@
         {
           "name": "Health",
           "type": "Health::Health"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
         },
         {
           "name": "PlatformerObject",
