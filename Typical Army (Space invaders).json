@@ -630,6 +630,78 @@
         "name": "Square5",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ship.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Ship",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship dash izquierda.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship dash izquierda.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship dash derecha.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship dash derecha.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship Dash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship Dash.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship Dash2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship Dash2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship Dash3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship Dash3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship Dash4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship Dash4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship Dash5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship Dash5.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4448,6 +4520,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Dash",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Ship Dash5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 20,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -6415,99 +6516,154 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Dash"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Dash",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "z"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "z"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    "=",
+                    "300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Dash\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "sci_fi_door-6451.mp3",
+                    "",
+                    "30",
+                    "1"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Dash\"",
+                    ">",
+                    "0.5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    "=",
+                    "100"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    ">=",
+                    "200"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Dash\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    "<=",
+                    "130"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Ship\""
+                  ]
+                }
+              ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Ship",
-                "PlatformerObject",
-                "=",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Ship",
-                "\"Dash\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "sci_fi_door-6451.mp3",
-                "",
-                "30",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Ship",
-                "\"Dash\"",
-                ">",
-                "0.5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Ship",
-                "PlatformerObject",
-                "=",
-                "100"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -10858,6 +11014,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Dash",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Ship Dash4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 20,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -12332,6 +12517,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player Input Move",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12861,6 +13047,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Power ups",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13645,7 +13832,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Dash",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13729,6 +13915,60 @@
                     "PlatformerObject",
                     "=",
                     "100"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    ">=",
+                    "200"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Dash\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    "<=",
+                    "130"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Ship\""
                   ]
                 }
               ]
@@ -17930,7 +18170,7 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 21,
+                        "x": 20,
                         "y": 16
                       },
                       "centerPoint": {
@@ -18073,6 +18313,35 @@
                         "name": "origine",
                         "x": 0,
                         "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Dash",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Ship Dash3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 20,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -20920,6 +21189,60 @@
                     "PlatformerObject",
                     "=",
                     "100"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    ">=",
+                    "200"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Dash\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    "<=",
+                    "130"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Ship\""
                   ]
                 }
               ]
@@ -24859,22 +25182,6 @@
           "height": 17,
           "layer": "",
           "name": "Graund",
-          "persistentUuid": "d116065b-d50a-455e-901e-dec07d5bc0c4",
-          "width": 20,
-          "x": 400,
-          "y": 500,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 17,
-          "layer": "",
-          "name": "Graund",
           "persistentUuid": "cf6bfb90-0000-4ab4-929e-81f8de3bdb46",
           "width": 20,
           "x": 460,
@@ -25171,6 +25478,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "c8db7805-262d-41bf-9850-e79fdd01244f",
+          "width": 20,
+          "x": 464,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "c69c337b-9ec4-4156-956f-4197e0f11a6e",
+          "width": 20,
+          "x": 444,
+          "y": 500,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -25377,8 +25716,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 21,
-                        "y": 16
+                        "x": 20,
+                        "y": 16.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -25526,6 +25865,35 @@
                         "name": "centre",
                         "x": 0,
                         "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Dash",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Ship Dash2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 19.5,
+                        "y": 16.5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 20,
+                        "y": 15
                       },
                       "customCollisionMask": []
                     }
@@ -26934,6 +27302,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player Input Move",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -28393,6 +28762,60 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    ">=",
+                    "200"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Dash\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "PlatformerObject",
+                    "<=",
+                    "130"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "\"Ship\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -28402,6 +28825,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Daño/Muerte",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
