@@ -752,6 +752,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/PNG/87653ef3b8bc6fadf92018d3e27f663e4ad20c2ba4717f3697bfb0384d10fbe7_Red spaceship 2_1.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Letter Key_X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "257943bb0ee2c544066a01ba322f38907a578653a6f101b83a1db3dd6ed905bd_Letter Key_X.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Xelu Free Controller and Key Prompts/Keyboard/Light/257943bb0ee2c544066a01ba322f38907a578653a6f101b83a1db3dd6ed905bd_Letter Key_X.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -5181,6 +5194,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14498,6 +14512,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Salto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19228,6 +19243,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20304,6 +20320,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Bullets/Loot",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21120,6 +21137,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Bombs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21245,6 +21263,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "UFO",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21385,6 +21404,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "All Enemies dead?  Load Phase1 again, or Phase2, 3 etc if you have more :)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21424,6 +21444,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Update GUI",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21502,6 +21523,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dash",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21651,6 +21673,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Daño/Muerte",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21848,6 +21871,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Salto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -29870,7 +29894,7 @@
                 "",
                 "dramatic-synth-echo-43970.mp3",
                 "",
-                "",
+                "40",
                 ""
               ]
             },
@@ -30278,7 +30302,7 @@
                 "",
                 "retro-wave-style-track-59892.mp3",
                 "",
-                "",
+                "40",
                 ""
               ]
             },
@@ -30432,7 +30456,7 @@
           "persistentUuid": "92d0dcd8-f06f-48b4-960e-5a58268b943e",
           "width": 0,
           "x": 131,
-          "y": 384,
+          "y": 395,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -30525,8 +30549,8 @@
           "name": "SpaceBar",
           "persistentUuid": "50e9b415-9eb6-4df4-afab-7a352fca68ff",
           "width": 68,
-          "x": 423,
-          "y": 204,
+          "x": 407,
+          "y": 205,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -30536,14 +30560,30 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 54,
+          "height": 50,
           "layer": "",
           "name": "TeclaZ",
           "persistentUuid": "8639baab-0ada-4ae4-a064-2ea4067ba776",
-          "width": 50,
-          "x": 400,
-          "y": 259,
+          "width": 49,
+          "x": 403,
+          "y": 310,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "layer": "",
+          "name": "TeclaX",
+          "persistentUuid": "687b7dbf-8970-461d-9d24-0473a7aab3d6",
+          "width": 49,
+          "x": 414,
+          "y": 260,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -30626,7 +30666,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "\nMove: \n\nShoot: \n\nDash: \n\n",
+          "string": "\nMove: \n\nJump:\n\nShoot: \n\nDash: \n\n",
           "font": "Kenney Future Narrow.ttf",
           "textAlignment": "",
           "characterSize": 24,
@@ -30873,6 +30913,67 @@
                         "y": 0
                       },
                       "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TeclaX",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "257943bb0ee2c544066a01ba322f38907a578653a6f101b83a1db3dd6ed905bd_Letter Key_X.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 14
+                          },
+                          {
+                            "x": 87,
+                            "y": 14
+                          },
+                          {
+                            "x": 87,
+                            "y": 86
+                          },
+                          {
+                            "x": 13,
+                            "y": 86
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -31346,7 +31447,7 @@
                 "",
                 "frontier-17296.mp3",
                 "",
-                "",
+                "30",
                 ""
               ]
             },
