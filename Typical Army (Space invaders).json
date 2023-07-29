@@ -671,7 +671,7 @@
         "alwaysLoaded": false,
         "file": "Ship Dash2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Ship Dash2.png\",\"extension\":\".png\"}",
         "name": "Ship Dash2.png",
         "smoothed": true,
         "userAdded": true
@@ -726,10 +726,32 @@
         "alwaysLoaded": false,
         "file": "Ship salto2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Ship salto2.png\",\"extension\":\".png\"}",
         "name": "Ship salto2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Salto.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Salto",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Red spaceship 2_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "87653ef3b8bc6fadf92018d3e27f663e4ad20c2ba4717f3697bfb0384d10fbe7_Red spaceship 2_1.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/PNG/87653ef3b8bc6fadf92018d3e27f663e4ad20c2ba4717f3697bfb0384d10fbe7_Red spaceship 2_1.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -4448,7 +4470,7 @@
           "name": "Ship",
           "tags": "",
           "type": "Sprite",
-          "updateIfNotVisible": false,
+          "updateIfNotVisible": true,
           "variables": [],
           "effects": [],
           "behaviors": [
@@ -7122,7 +7144,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Salto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7138,28 +7159,14 @@
                     "Ship",
                     "PlatformerObject"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlayMusic"
-                  },
-                  "parameters": [
-                    "",
-                    "woosh-1-84800.mp3",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -11292,7 +11299,7 @@
               ]
             },
             {
-              "name": "Muerto",
+              "name": "Salto",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -11301,12 +11308,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "TP2-Space-invaders-main\\assets\\playerShip1_red.png",
+                      "image": "Ship Dash2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 20,
+                        "y": 15
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -14469,7 +14476,7 @@
                   },
                   "parameters": [
                     "Ship",
-                    "\"Muerto\""
+                    "\"Salto\""
                   ]
                 },
                 {
@@ -14492,7 +14499,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Salto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14507,6 +14513,32 @@
                   "parameters": [
                     "Ship",
                     "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
                   ]
                 },
                 {
@@ -18535,7 +18567,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 20,
-                        "y": 16
+                        "y": 15
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -18662,7 +18694,7 @@
               ]
             },
             {
-              "name": "Muerto",
+              "name": "Salto",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -18671,12 +18703,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "TP2-Space-invaders-main\\assets\\playerShip1_red.png",
+                      "image": "Ship Dash2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 20,
+                        "y": 15
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -21803,7 +21835,7 @@
                   },
                   "parameters": [
                     "Ship",
-                    "\"Muerto\""
+                    "\"Salto\""
                   ]
                 },
                 {
@@ -21826,7 +21858,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Salto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21841,6 +21872,32 @@
                   "parameters": [
                     "Ship",
                     "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
                   ]
                 },
                 {
@@ -21859,7 +21916,7 @@
                     "",
                     "woosh-1-84800.mp3",
                     "",
-                    "",
+                    "30",
                     ""
                   ]
                 }
@@ -26141,7 +26198,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 20,
-                        "y": 14
+                        "y": 15
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -26268,7 +26325,7 @@
               ]
             },
             {
-              "name": "Muerto",
+              "name": "Salto",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -26277,12 +26334,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "TP2-Space-invaders-main\\assets\\playerShip1_red.png",
+                      "image": "Ship Dash2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 20,
+                        "y": 15
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -26306,7 +26363,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Ship Dash2.png",
+                      "image": "Ship Dash5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -26318,35 +26375,6 @@
                         "name": "centre",
                         "x": 20,
                         "y": 15
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Salto",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Ship salto2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 21,
-                        "y": 17
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
                       },
                       "customCollisionMask": []
                     }
@@ -27762,7 +27790,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Player Input Move",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -28737,7 +28764,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Power ups",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -29461,7 +29487,7 @@
                   },
                   "parameters": [
                     "Ship",
-                    "\"Muerto\""
+                    "\"Salto\""
                   ]
                 },
                 {
@@ -29484,7 +29510,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Salto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -29499,6 +29524,32 @@
                   "parameters": [
                     "Ship",
                     "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Ship",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
                   ]
                 },
                 {
@@ -29517,7 +29568,7 @@
                     "",
                     "woosh-1-84800.mp3",
                     "",
-                    "",
+                    "30",
                     ""
                   ]
                 }
