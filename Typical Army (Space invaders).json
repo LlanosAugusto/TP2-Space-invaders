@@ -4439,8 +4439,8 @@
           "name": "Muerte",
           "persistentUuid": "04a2b181-bfe3-4a9c-8f9f-c244cfa4f9f5",
           "width": 120,
-          "x": -126,
-          "y": 98,
+          "x": -124,
+          "y": 94,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -4456,7 +4456,7 @@
           "persistentUuid": "ed363d24-d698-480c-8cd4-7a7844ad8327",
           "width": 120,
           "x": 968,
-          "y": 102,
+          "y": 95,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -5117,8 +5117,8 @@
               "name": "EllipseMovement",
               "type": "EllipseMovement::EllipseMovement",
               "RadiusX": 5,
-              "RadiusY": 20,
-              "LoopDuration": 1,
+              "RadiusY": 10,
+              "LoopDuration": 2,
               "InitialTurningLeft": false,
               "InitialDirectionAngle": 0,
               "ShouldRotate": false,
@@ -5152,9 +5152,9 @@
             {
               "name": "EllipseMovement",
               "type": "EllipseMovement::EllipseMovement",
-              "RadiusX": 60,
-              "RadiusY": 10,
-              "LoopDuration": 2,
+              "RadiusX": 40,
+              "RadiusY": 5,
+              "LoopDuration": 3,
               "InitialTurningLeft": false,
               "InitialDirectionAngle": 0,
               "ShouldRotate": false,
@@ -5181,7 +5181,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5284,7 +5283,7 @@
                   "parameters": [
                     "BombMAX",
                     "=",
-                    "4"
+                    "12"
                   ]
                 },
                 {
@@ -5294,7 +5293,7 @@
                   "parameters": [
                     "BombFREQ",
                     "=",
-                    "2"
+                    "4"
                   ]
                 }
               ],
@@ -10779,7 +10778,7 @@
           "name": "PlataformaMovil",
           "persistentUuid": "3635b612-62e2-4fec-b6ee-7ca839f2ca18",
           "width": 124,
-          "x": 179,
+          "x": 180,
           "y": 456,
           "zOrder": 15,
           "numberProperties": [],
@@ -10795,7 +10794,7 @@
           "name": "PlataformaMovil",
           "persistentUuid": "60d2932b-5b6c-4202-ac65-9c696fcabe92",
           "width": 124,
-          "x": 699,
+          "x": 700,
           "y": 456,
           "zOrder": 15,
           "numberProperties": [],
@@ -10891,8 +10890,8 @@
           "name": "Muerte",
           "persistentUuid": "e580f3d6-a797-4612-8e19-9e679a46ba7d",
           "width": 88,
-          "x": -103,
-          "y": 63,
+          "x": -99,
+          "y": 59,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -10907,8 +10906,8 @@
           "name": "Muerte",
           "persistentUuid": "bdf24a65-029c-4536-a9d1-605b3400c269",
           "width": 88,
-          "x": 971,
-          "y": 72,
+          "x": 972,
+          "y": 59,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -10939,8 +10938,8 @@
           "name": "PlataformaMovil2",
           "persistentUuid": "1e784805-1382-4b75-962a-17a892892926",
           "width": 56,
-          "x": 149,
-          "y": 494,
+          "x": 80,
+          "y": 500,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -10955,8 +10954,8 @@
           "name": "PlataformaMovil2",
           "persistentUuid": "f742c996-c3db-4baf-965f-d3b314f6db81",
           "width": 56,
-          "x": 811,
-          "y": 494,
+          "x": 860,
+          "y": 500,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -11805,9 +11804,9 @@
             {
               "name": "EllipseMovement",
               "type": "EllipseMovement::EllipseMovement",
-              "RadiusX": 80,
-              "RadiusY": 5,
-              "LoopDuration": 2,
+              "RadiusX": 40,
+              "RadiusY": 0,
+              "LoopDuration": 3,
               "InitialTurningLeft": false,
               "InitialDirectionAngle": 0,
               "ShouldRotate": false,
@@ -11841,8 +11840,8 @@
             {
               "name": "EllipseMovement",
               "type": "EllipseMovement::EllipseMovement",
-              "RadiusX": 5,
-              "RadiusY": 25,
+              "RadiusX": 0,
+              "RadiusY": 15,
               "LoopDuration": 3,
               "InitialTurningLeft": false,
               "InitialDirectionAngle": 0,
@@ -12003,7 +12002,7 @@
                   "parameters": [
                     "BombMAX",
                     "=",
-                    "4"
+                    "10"
                   ]
                 },
                 {
@@ -12013,7 +12012,7 @@
                   "parameters": [
                     "BombFREQ",
                     "=",
-                    "2"
+                    "3"
                   ]
                 },
                 {
@@ -14651,7 +14650,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.875765373172159,
+        "zoomFactor": 1.0685777208211982,
         "windowMask": false
       },
       "objectsGroups": [
@@ -18334,8 +18333,8 @@
           "name": "Muerte",
           "persistentUuid": "e580f3d6-a797-4612-8e19-9e679a46ba7d",
           "width": 88,
-          "x": -103,
-          "y": 63,
+          "x": -100,
+          "y": 59,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -18350,8 +18349,8 @@
           "name": "Muerte",
           "persistentUuid": "bdf24a65-029c-4536-a9d1-605b3400c269",
           "width": 88,
-          "x": 971,
-          "y": 72,
+          "x": 975,
+          "y": 59,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -19229,7 +19228,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19362,7 +19360,7 @@
                   "parameters": [
                     "BombMAX",
                     "=",
-                    "4"
+                    "10"
                   ]
                 },
                 {
@@ -19372,7 +19370,7 @@
                   "parameters": [
                     "BombFREQ",
                     "=",
-                    "2"
+                    "3"
                   ]
                 },
                 {
@@ -20306,7 +20304,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bullets/Loot",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20725,7 +20722,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Power ups",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21124,7 +21120,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bombs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21250,7 +21245,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "UFO",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21391,7 +21385,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "All Enemies dead?  Load Phase1 again, or Phase2, 3 etc if you have more :)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21431,7 +21424,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Update GUI",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21510,7 +21502,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Dash",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21660,7 +21651,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Daño/Muerte",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22010,7 +22000,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.0337203300802416,
+        "zoomFactor": 1.0685777208212008,
         "windowMask": false
       },
       "objectsGroups": [
@@ -22106,7 +22096,7 @@
           "persistentUuid": "c857b361-2dd0-4ac6-afd8-2aad6e912bc4",
           "width": 0,
           "x": 500,
-          "y": 460,
+          "y": 480,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -25438,7 +25428,7 @@
           "persistentUuid": "59ce06ee-a701-49bf-a349-0999bda2782f",
           "width": 20,
           "x": 40,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25454,7 +25444,7 @@
           "persistentUuid": "7eb608cd-38d1-4343-bf8c-5f3e759e00b5",
           "width": 20,
           "x": 60,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25470,7 +25460,7 @@
           "persistentUuid": "10f38f97-2ce0-4f48-95aa-3969b1b56f6f",
           "width": 20,
           "x": 80,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25486,7 +25476,7 @@
           "persistentUuid": "4c1eb361-b274-494e-87e3-f52180c21755",
           "width": 20,
           "x": 100,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25502,7 +25492,7 @@
           "persistentUuid": "ca43bada-a29b-411d-a9af-126ca5bfe47e",
           "width": 20,
           "x": 120,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25518,7 +25508,7 @@
           "persistentUuid": "d0382d66-1480-4ead-a0a5-3e7a7a0001a7",
           "width": 20,
           "x": 140,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25534,7 +25524,7 @@
           "persistentUuid": "f7203817-8bd8-4fcd-8da4-5390426a3c1e",
           "width": 20,
           "x": 160,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25550,7 +25540,7 @@
           "persistentUuid": "1dd90d07-b585-4de7-93ae-c4d498097cb2",
           "width": 20,
           "x": 180,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25566,7 +25556,7 @@
           "persistentUuid": "208e3aab-acf5-465b-a5af-d7af26954e41",
           "width": 20,
           "x": 200,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25582,7 +25572,7 @@
           "persistentUuid": "b6371e41-bafe-488e-ba42-d42e4beb9a96",
           "width": 20,
           "x": 220,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25596,22 +25586,6 @@
           "layer": "",
           "name": "Graund",
           "persistentUuid": "d9d98e7c-3e25-4a2b-b40b-f09679dea1c4",
-          "width": 20,
-          "x": 320,
-          "y": 500,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 17,
-          "layer": "",
-          "name": "Graund",
-          "persistentUuid": "6dcf4e73-ff8e-4b07-a4fe-ae1a914d0bd9",
           "width": 20,
           "x": 340,
           "y": 500,
@@ -25627,7 +25601,7 @@
           "height": 17,
           "layer": "",
           "name": "Graund",
-          "persistentUuid": "d33f88bf-1f83-4741-9a59-a2002080a4c5",
+          "persistentUuid": "6dcf4e73-ff8e-4b07-a4fe-ae1a914d0bd9",
           "width": 20,
           "x": 360,
           "y": 500,
@@ -25643,7 +25617,7 @@
           "height": 17,
           "layer": "",
           "name": "Graund",
-          "persistentUuid": "f976a6cb-1633-485f-bad2-6840d40b9034",
+          "persistentUuid": "d33f88bf-1f83-4741-9a59-a2002080a4c5",
           "width": 20,
           "x": 380,
           "y": 500,
@@ -25659,9 +25633,9 @@
           "height": 17,
           "layer": "",
           "name": "Graund",
-          "persistentUuid": "cf6bfb90-0000-4ab4-929e-81f8de3bdb46",
+          "persistentUuid": "f976a6cb-1633-485f-bad2-6840d40b9034",
           "width": 20,
-          "x": 460,
+          "x": 400,
           "y": 500,
           "zOrder": 13,
           "numberProperties": [],
@@ -25790,7 +25764,7 @@
           "persistentUuid": "ab6a6ad8-bff7-42ce-81f9-803d5cfe5ed3",
           "width": 20,
           "x": 740,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25806,7 +25780,7 @@
           "persistentUuid": "6f1bcc59-609c-4db1-a5fd-1299b44415d5",
           "width": 20,
           "x": 760,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25822,7 +25796,7 @@
           "persistentUuid": "0af8cced-fb40-465c-bb4a-f8baa3bc5143",
           "width": 20,
           "x": 780,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25838,7 +25812,7 @@
           "persistentUuid": "f72c8a72-83aa-47e5-baf0-e7f346b8c797",
           "width": 20,
           "x": 800,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25854,7 +25828,7 @@
           "persistentUuid": "b6eb8e1c-0405-4fa7-a461-6b8663d57cc2",
           "width": 20,
           "x": 820,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25870,7 +25844,7 @@
           "persistentUuid": "e00bfea8-0f3a-4b55-938f-e86fe9b0c737",
           "width": 20,
           "x": 840,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25886,7 +25860,7 @@
           "persistentUuid": "d3b71f92-cd59-44d8-8ef0-ed1d895e4c5e",
           "width": 20,
           "x": 860,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25902,7 +25876,7 @@
           "persistentUuid": "cc0acc61-2b0b-4132-90da-984921ba9040",
           "width": 20,
           "x": 880,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25918,7 +25892,7 @@
           "persistentUuid": "47fbb8f1-ca80-4c71-920d-81bfde09f40d",
           "width": 20,
           "x": 900,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25934,7 +25908,7 @@
           "persistentUuid": "855f0b38-375f-4a87-961e-3e9e00e46303",
           "width": 20,
           "x": 920,
-          "y": 469,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -25965,7 +25939,7 @@
           "name": "Graund",
           "persistentUuid": "c8db7805-262d-41bf-9850-e79fdd01244f",
           "width": 20,
-          "x": 464,
+          "x": 460,
           "y": 500,
           "zOrder": 13,
           "numberProperties": [],
@@ -25979,10 +25953,42 @@
           "height": 17,
           "layer": "",
           "name": "Graund",
-          "persistentUuid": "c69c337b-9ec4-4156-956f-4197e0f11a6e",
+          "persistentUuid": "fc8d91e2-89f4-465f-b285-83fedc7e718d",
           "width": 20,
-          "x": 444,
-          "y": 500,
+          "x": 240,
+          "y": 490,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "e68ab919-cde0-4eb8-b510-9105304265ac",
+          "width": 20,
+          "x": 720,
+          "y": 490,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "ceb6f847-ffde-48fb-8911-60e210a52f6f",
+          "width": 20,
+          "x": 20,
+          "y": 490,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -26824,7 +26830,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -26957,7 +26962,7 @@
                   "parameters": [
                     "BombMAX",
                     "=",
-                    "4"
+                    "10"
                   ]
                 },
                 {
@@ -26967,7 +26972,7 @@
                   "parameters": [
                     "BombFREQ",
                     "=",
-                    "2"
+                    "3"
                   ]
                 },
                 {
@@ -27123,7 +27128,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Invaders",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -27900,7 +27904,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bullets/Loot",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -28319,7 +28322,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bombs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -28410,65 +28412,6 @@
                   },
                   "parameters": [
                     "Base",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "BombNUM",
-                    "-",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "laser1.ogg",
-                    "no",
-                    "30",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    "Graund",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Graund",
                     ""
                   ]
                 },
