@@ -730,6 +730,19 @@
         "name": "Ship salto2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Explosion 2_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "151b3050bc3b07985c68c34b3b2d0b5d97a6850346f77e16a88086307776807a_Explosion 2_16.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Art Spell Magic FX/151b3050bc3b07985c68c34b3b2d0b5d97a6850346f77e16a88086307776807a_Explosion 2_16.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -776,7 +789,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.9673796392515358,
+        "zoomFactor": 0.8471975907682697,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4775,7 +4788,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Bomba",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -4785,17 +4798,58 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "laserGreen04.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Explosion",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "151b3050bc3b07985c68c34b3b2d0b5d97a6850346f77e16a88086307776807a_Explosion 2_16.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30.5,
+                        "y": 31
                       },
                       "customCollisionMask": []
                     }
@@ -4919,7 +4973,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites\\Doble tiro.png",
+                      "image": "assets\\Gold things.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4961,7 +5015,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites\\Escudo con Cruz.png",
+                      "image": "assets\\Gold shield.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5478,18 +5532,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bomb",
-                            "boss.X()",
-                            "boss.Y()",
-                            ""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ModVarScene"
@@ -6018,19 +6060,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Bomb",
-                    "",
-                    ""
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -6038,15 +6068,6 @@
                   },
                   "parameters": [
                     "Bullet",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
                     ""
                   ]
                 },
@@ -6150,62 +6171,18 @@
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "DisparoDoble",
                   "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "MettreY"
-                      },
-                      "parameters": [
-                        "DisparoDoble",
-                        "+",
-                        "100*TimeDelta()"
-                      ]
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosY"
-                          },
-                          "parameters": [
-                            "DisparoDoble",
-                            ">",
-                            "600"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "DisparoDoble",
-                            ""
-                          ]
-                        }
-                      ]
+                      "conditions": [],
+                      "actions": []
                     }
                   ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "DisparoDoble",
-                        "Ship",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "GlobalVariableAsBoolean"
@@ -6226,33 +6203,12 @@
                         "+",
                         "100"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "DisparoDoble",
-                        ""
-                      ]
                     }
                   ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "DisparoDoble",
-                        "Ship",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "GlobalVariableAsBoolean"
@@ -6271,15 +6227,6 @@
                       "parameters": [
                         "DisparoDoble",
                         "True"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "DisparoDoble",
-                        ""
                       ]
                     }
                   ]
@@ -6381,62 +6328,18 @@
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Escudo",
                   "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "MettreY"
-                      },
-                      "parameters": [
-                        "Escudo",
-                        "+",
-                        "100*TimeDelta()"
-                      ]
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosY"
-                          },
-                          "parameters": [
-                            "Escudo",
-                            ">",
-                            "600"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Escudo",
-                            ""
-                          ]
-                        }
-                      ]
+                      "conditions": [],
+                      "actions": []
                     }
                   ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Escudo",
-                        "Ship",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "inverted": true,
@@ -6462,15 +6365,6 @@
                     },
                     {
                       "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Escudo",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "SetAnimationName"
                       },
                       "parameters": [
@@ -6483,18 +6377,6 @@
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Escudo",
-                        "Ship",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "AnimationName"
@@ -6529,12 +6411,12 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bombs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Bomb",
               "conditions": [],
@@ -6607,11 +6489,42 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Delete"
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "BombNUM",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "laser1.ogg",
+                    "no",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
                   },
                   "parameters": [
                     "Bomb",
-                    ""
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
                   ]
                 },
                 {
@@ -6622,7 +6535,26 @@
                     "Base",
                     ""
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "Graund",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "ModVarScene"
@@ -6642,6 +6574,60 @@
                     "laser1.ogg",
                     "no",
                     "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Graund",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\"",
+                    ">=",
+                    "0.1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bomb",
                     ""
                   ]
                 }
@@ -6985,17 +6971,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Ship",
-                    "Bomb",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "inverted": true,
                     "value": "Health::Health::IsDead"
                   },
@@ -7027,15 +7002,6 @@
                   "parameters": [
                     "Ship",
                     "\"hit\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
                   ]
                 }
               ]
@@ -7345,7 +7311,7 @@
           "persistentUuid": "c857b361-2dd0-4ac6-afd8-2aad6e912bc4",
           "width": 0,
           "x": 497,
-          "y": 459,
+          "y": 456,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -11545,7 +11511,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Bomba",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -11555,17 +11521,58 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "laserGreen04.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Explosion",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "151b3050bc3b07985c68c34b3b2d0b5d97a6850346f77e16a88086307776807a_Explosion 2_16.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30.5,
+                        "y": 31
                       },
                       "customCollisionMask": []
                     }
@@ -12267,18 +12274,6 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bomb",
-                            "Invader1.X()",
-                            "Invader1.Y()",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "ModVarScene"
                           },
                           "parameters": [
@@ -12361,18 +12356,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bomb",
-                            "Invader1.X()",
-                            "Invader1.Y()",
-                            ""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ModVarScene"
@@ -12462,18 +12445,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bomb",
-                            "Invader1.X()",
-                            "Invader1.Y()",
-                            ""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ModVarScene"
@@ -13247,19 +13218,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Bomb",
-                    "",
-                    ""
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -13267,15 +13226,6 @@
                   },
                   "parameters": [
                     "Bullet",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
                     ""
                   ]
                 },
@@ -13350,6 +13300,377 @@
                   ]
                 }
               ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Bombs",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Bomb",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "+",
+                    "180 * TimeDelta()"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Bomb",
+                        ">",
+                        "600"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Bomb",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "BombNUM",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "Base",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "BombNUM",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "laser1.ogg",
+                    "no",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Base",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "Graund",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "BombNUM",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "laser1.ogg",
+                    "no",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Graund",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\"",
+                    ">=",
+                    "0.1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "UFO",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "15",
+                    "\"UFOTimer\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "UFO",
+                    "0",
+                    "60",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"UFOTimer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "UFO",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "UFO",
+                    "+",
+                    "90 * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "twoTone1.ogg",
+                    "no",
+                    "5",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UFO",
+                    "Bullet",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "UFO",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "+",
+                    "200"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "UFOTime",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -13759,273 +14080,6 @@
           "colorR": 74,
           "creationTime": 0,
           "folded": true,
-          "name": "Bombs",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Bomb",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreY"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    "+",
-                    "180 * TimeDelta()"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PosY"
-                      },
-                      "parameters": [
-                        "Bomb",
-                        ">",
-                        "600"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Bomb",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "BombNUM",
-                        "-",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    "Base",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Base",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "BombNUM",
-                    "-",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "laser1.ogg",
-                    "no",
-                    "30",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "folded": true,
-          "name": "UFO",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "15",
-                    "\"UFOTimer\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "UFO",
-                    "0",
-                    "60",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"UFOTimer\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "UFO",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "UFO",
-                    "+",
-                    "90 * TimeDelta()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "twoTone1.ogg",
-                    "no",
-                    "5",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "UFO",
-                    "Bullet",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "UFO",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Score",
-                    "+",
-                    "200"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "UFOTime",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "folded": true,
           "name": "All Enemies dead?  Load Phase1 again, or Phase2, 3 etc if you have more :)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14355,17 +14409,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Ship",
-                    "Bomb",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "inverted": true,
                     "value": "Health::Health::IsDead"
                   },
@@ -14397,15 +14440,6 @@
                   "parameters": [
                     "Ship",
                     "\"hit\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
                   ]
                 }
               ]
@@ -18915,7 +18949,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Bomba",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -18925,17 +18959,58 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "laserGreen04.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Explosion",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "151b3050bc3b07985c68c34b3b2d0b5d97a6850346f77e16a88086307776807a_Explosion 2_16.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30.5,
+                        "y": 31
                       },
                       "customCollisionMask": []
                     }
@@ -19601,18 +19676,6 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bomb",
-                            "Invader1.X()",
-                            "Invader1.Y()",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "ModVarScene"
                           },
                           "parameters": [
@@ -19695,18 +19758,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bomb",
-                            "Invader1.X()",
-                            "Invader1.Y()",
-                            ""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ModVarScene"
@@ -19796,18 +19847,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Bomb",
-                            "Invader1.X()",
-                            "Invader1.Y()",
-                            ""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ModVarScene"
@@ -20581,19 +20620,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Bomb",
-                    "",
-                    ""
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -20601,15 +20628,6 @@
                   },
                   "parameters": [
                     "Bullet",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
                     ""
                   ]
                 },
@@ -20684,6 +20702,377 @@
                   ]
                 }
               ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Bombs",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Bomb",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "+",
+                    "180 * TimeDelta()"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Bomb",
+                        ">",
+                        "600"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Bomb",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "BombNUM",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "Base",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "BombNUM",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "laser1.ogg",
+                    "no",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Base",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "Graund",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "BombNUM",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "laser1.ogg",
+                    "no",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Graund",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\"",
+                    ">=",
+                    "0.1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "UFO",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "15",
+                    "\"UFOTimer\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "UFO",
+                    "0",
+                    "60",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"UFOTimer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "UFO",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "UFO",
+                    "+",
+                    "90 * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "twoTone1.ogg",
+                    "no",
+                    "5",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "UFO",
+                    "Bullet",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "UFO",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Score",
+                    "+",
+                    "200"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "UFOTime",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -21093,273 +21482,6 @@
           "colorR": 74,
           "creationTime": 0,
           "folded": true,
-          "name": "Bombs",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Bomb",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreY"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    "+",
-                    "180 * TimeDelta()"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PosY"
-                      },
-                      "parameters": [
-                        "Bomb",
-                        ">",
-                        "600"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Bomb",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "BombNUM",
-                        "-",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    "Base",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Base",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "BombNUM",
-                    "-",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "laser1.ogg",
-                    "no",
-                    "30",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "folded": true,
-          "name": "UFO",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "15",
-                    "\"UFOTimer\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "UFO",
-                    "0",
-                    "60",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"UFOTimer\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "UFO",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "UFO",
-                    "+",
-                    "90 * TimeDelta()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "twoTone1.ogg",
-                    "no",
-                    "5",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "UFO",
-                    "Bullet",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "UFO",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Score",
-                    "+",
-                    "200"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "UFOTime",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "folded": true,
           "name": "All Enemies dead?  Load Phase1 again, or Phase2, 3 etc if you have more :)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21689,17 +21811,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Ship",
-                    "Bomb",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "inverted": true,
                     "value": "Health::Health::IsDead"
                   },
@@ -21731,15 +21842,6 @@
                   "parameters": [
                     "Ship",
                     "\"hit\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
                   ]
                 }
               ]
@@ -21953,7 +22055,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.0337203300802416,
+        "zoomFactor": 0.935823366438434,
         "windowMask": false
       },
       "objectsGroups": [
@@ -25891,8 +25993,8 @@
           "layer": "",
           "name": "Muerte",
           "persistentUuid": "913560ac-7390-4849-adda-59fde9a8c1ff",
-          "width": 984,
-          "x": -14,
+          "width": 1190,
+          "x": -116,
           "y": 542,
           "zOrder": 14,
           "numberProperties": [],
@@ -25927,6 +26029,38 @@
           "x": 444,
           "y": 500,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 388,
+          "layer": "",
+          "name": "Muerte",
+          "persistentUuid": "7a216911-f46d-454d-bff1-0c1ab5fbb875",
+          "width": 68,
+          "x": 975,
+          "y": 188,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 388,
+          "layer": "",
+          "name": "Muerte",
+          "persistentUuid": "5ecdcaaf-0172-4d35-b272-7135c4cdd5e7",
+          "width": 68,
+          "x": -81,
+          "y": 183,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -26550,7 +26684,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Bomba",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -26560,17 +26694,58 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "laserGreen04.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Explosion",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "151b3050bc3b07985c68c34b3b2d0b5d97a6850346f77e16a88086307776807a_Explosion 2_16.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 30,
+                          "y": 30
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 30.5,
+                        "y": 31
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 30.5,
+                        "y": 31
                       },
                       "customCollisionMask": []
                     }
@@ -28292,12 +28467,12 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bombs",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Bomb",
               "conditions": [],
@@ -28370,24 +28545,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Base",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -28405,6 +28562,33 @@
                     "laser1.ogg",
                     "no",
                     "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Base",
                     ""
                   ]
                 }
@@ -28429,24 +28613,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Bomb",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Graund",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -28464,6 +28630,60 @@
                     "laser1.ogg",
                     "no",
                     "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Explosion\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Graund",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Bomb",
+                    "\"Bomb\"",
+                    ">=",
+                    "0.1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bomb",
                     ""
                   ]
                 }
