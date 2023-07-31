@@ -898,7 +898,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8471975907682697,
+        "zoomFactor": 1,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4329,38 +4329,6 @@
           "height": 17,
           "layer": "",
           "name": "Graund",
-          "persistentUuid": "08eba0bf-797f-4b98-bbf4-9b40c0ebb067",
-          "width": 20,
-          "x": 655,
-          "y": 629,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 17,
-          "layer": "",
-          "name": "Graund",
-          "persistentUuid": "68fb25f9-681d-4fe3-8d49-deac3e5e2b58",
-          "width": 20,
-          "x": 635,
-          "y": 629,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 17,
-          "layer": "",
-          "name": "Graund",
           "persistentUuid": "a25c6b76-91d8-4c26-8276-938891fb956b",
           "width": 20,
           "x": 392,
@@ -7653,7 +7621,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1,
+        "zoomFactor": 0.9673796392515362,
         "windowMask": false
       },
       "objectsGroups": [
@@ -11191,8 +11159,8 @@
           "layer": "",
           "name": "PlataformaMovil",
           "persistentUuid": "60d2932b-5b6c-4202-ac65-9c696fcabe92",
-          "width": 124,
-          "x": 699,
+          "width": 87,
+          "x": 736,
           "y": 456,
           "zOrder": 15,
           "numberProperties": [],
@@ -11320,8 +11288,8 @@
           "name": "PlataformaMovil2",
           "persistentUuid": "617e4963-75a3-438e-bf9f-6c73f71cd97c",
           "width": 55,
-          "x": 870,
-          "y": 508,
+          "x": 883,
+          "y": 487,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -11339,22 +11307,6 @@
           "x": 63,
           "y": 508,
           "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 14,
-          "layer": "",
-          "name": "Graund2",
-          "persistentUuid": "fbf47b69-a535-4ffc-a421-d79c6bfd8866",
-          "width": 107,
-          "x": 444,
-          "y": 481,
-          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11387,6 +11339,246 @@
           "x": 611,
           "y": 508,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "9cb382e4-acb7-4354-8618-0e28757f3877",
+          "width": 14,
+          "x": 447,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "985a2562-f67d-4ce3-a37e-6c5e6e143281",
+          "width": 14,
+          "x": 458,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "a31fee34-f698-41ba-970a-9a92b6d6f7e0",
+          "width": 14,
+          "x": 472,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "1bdbc548-8573-4e1e-84b2-02e476a862e4",
+          "width": 14,
+          "x": 485,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "af7194e9-8ba2-49fe-a519-ad8880681bed",
+          "width": 14,
+          "x": 499,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "e26a1e38-daa9-4abf-9f04-970aab4c66bd",
+          "width": 14,
+          "x": 513,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "51859cd6-3234-40e4-8801-da3ce10eef2a",
+          "width": 14,
+          "x": 527,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "a9e38369-f1bc-4758-a14b-a18db0d563ac",
+          "width": 14,
+          "x": 447,
+          "y": 495,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "bb5a38f4-b2f0-4c4e-af2f-eb9ce877741c",
+          "width": 14,
+          "x": 527,
+          "y": 481,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "19bb1822-3dea-4bb1-9f4a-d96f199cb5cd",
+          "width": 14,
+          "x": 461,
+          "y": 495,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "0b520ce6-6c9e-47ae-8e72-8a6535505d8f",
+          "width": 14,
+          "x": 475,
+          "y": 495,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "05836c78-f8a2-4c4f-9cfc-474694765811",
+          "width": 14,
+          "x": 489,
+          "y": 495,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "2c70c44b-128d-4697-b606-97471e3a5791",
+          "width": 14,
+          "x": 503,
+          "y": 495,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "5b5cfd2e-6240-4a80-a79d-d0a5ec68d915",
+          "width": 14,
+          "x": 517,
+          "y": 495,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 14,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "bd32b5a4-06a4-4451-9754-7b59e1f50bea",
+          "width": 14,
+          "x": 527,
+          "y": 495,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12360,7 +12552,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12493,7 +12684,7 @@
                   "parameters": [
                     "BombMAX",
                     "=",
-                    "10"
+                    "12"
                   ]
                 },
                 {
@@ -12503,7 +12694,7 @@
                   "parameters": [
                     "BombFREQ",
                     "=",
-                    "3"
+                    "4"
                   ]
                 },
                 {
@@ -13764,7 +13955,7 @@
                     "Invader1",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -13775,7 +13966,7 @@
                     "Invader2",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -13786,7 +13977,7 @@
                     "Invader3",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 }
               ],
@@ -14491,6 +14682,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Power ups",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14731,6 +14923,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Escudo",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -15228,7 +15421,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.875765373172159,
+        "zoomFactor": 0.9673796392515362,
         "windowMask": false
       },
       "objectsGroups": [
@@ -15323,8 +15516,8 @@
           "name": "Ship",
           "persistentUuid": "c857b361-2dd0-4ac6-afd8-2aad6e912bc4",
           "width": 0,
-          "x": 497,
-          "y": 459,
+          "x": 502,
+          "y": 460,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -18892,12 +19085,60 @@
           "depth": 0,
           "height": 17,
           "layer": "",
-          "name": "Graund2",
-          "persistentUuid": "5abefe5f-60f3-4fe0-b68c-ca7b22e40099",
-          "width": 59,
+          "name": "Graund",
+          "persistentUuid": "e49515be-cc36-4d12-ae32-1f71d3d84255",
+          "width": 18,
           "x": 467,
           "y": 477,
-          "zOrder": 16,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "e0c0fa64-6bad-43b4-b1f3-34a08c05b546",
+          "width": 18,
+          "x": 485,
+          "y": 477,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "2cbd48ef-c8d8-4f65-ace2-35c68381de03",
+          "width": 18,
+          "x": 503,
+          "y": 477,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 17,
+          "layer": "",
+          "name": "Graund",
+          "persistentUuid": "04258412-3f30-42af-a338-29eaf9f9203e",
+          "width": 18,
+          "x": 517,
+          "y": 477,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -19835,6 +20076,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19977,7 +20219,7 @@
                   "parameters": [
                     "BombFREQ",
                     "=",
-                    "2"
+                    "4"
                   ]
                 },
                 {
@@ -21006,7 +21248,7 @@
                     "Invader1",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -21017,7 +21259,7 @@
                     "Invader2",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -21028,7 +21270,7 @@
                     "Invader3",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 }
               ],
@@ -22005,6 +22247,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "All Enemies dead?  Load Phase1 again, or Phase2, 3 etc if you have more :)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22566,6 +22809,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Salto",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -27330,6 +27574,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Initialise Scene",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -27472,7 +27717,7 @@
                   "parameters": [
                     "BombFREQ",
                     "=",
-                    "2"
+                    "4"
                   ]
                 },
                 {
@@ -28502,7 +28747,7 @@
                     "Invader1",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -28513,7 +28758,7 @@
                     "Invader2",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 },
                 {
@@ -28524,7 +28769,7 @@
                     "Invader3",
                     "Loot",
                     "=",
-                    "RandomInRange(1,20)"
+                    "RandomInRange(1,10)"
                   ]
                 }
               ],
@@ -29248,7 +29493,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Power ups",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
